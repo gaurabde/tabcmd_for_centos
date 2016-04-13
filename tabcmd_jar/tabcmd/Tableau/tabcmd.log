@@ -1,0 +1,58 @@
+[4973] DEBUG  Apr-12 20:20:59: 
+=====================================================================
+[4973] DEBUG  Apr-12 20:20:59: ====>> Starting Tabcmd 7.0 at 2016-04-12 20:20:59 -0700 <<====
+[4973] DEBUG  Apr-12 20:20:59: Build 7000.12.0913.1719
+[4973] DEBUG  Apr-12 20:20:59: Finished at 2016-04-12 20:20:59 -0700
+[5028] DEBUG  Apr-12 20:22:02: 
+=====================================================================
+[5028] DEBUG  Apr-12 20:22:02: ====>> Starting Tabcmd 7.0 at 2016-04-12 20:22:02 -0700 <<====
+[5028] DEBUG  Apr-12 20:22:02: Build 7000.12.0913.1719
+[5028] DEBUG  Apr-12 20:22:02: Finished at 2016-04-12 20:22:02 -0700
+[5106] DEBUG  Apr-12 20:23:43: 
+=====================================================================
+[5106] DEBUG  Apr-12 20:23:43: ====>> Starting Tabcmd 7.0 at 2016-04-12 20:23:43 -0700 <<====
+[5106] DEBUG  Apr-12 20:23:43: Build 7000.12.0913.1719
+[5106] DEBUG  Apr-12 20:23:43: Finished at 2016-04-12 20:23:43 -0700
+[5204] DEBUG  Apr-12 20:24:22: 
+=====================================================================
+[5204] DEBUG  Apr-12 20:24:22: ====>> Starting Tabcmd 7.0 at 2016-04-12 20:24:22 -0700 <<====
+[5204] DEBUG  Apr-12 20:24:22: Build 7000.12.0913.1719
+[5204] DEBUG  Apr-12 20:24:22: Finished at 2016-04-12 20:24:22 -0700
+[5234] DEBUG  Apr-12 20:24:48: 
+=====================================================================
+[5234] DEBUG  Apr-12 20:24:48: ====>> Starting Tabcmd 7.0 at 2016-04-12 20:24:48 -0700 <<====
+[5234] DEBUG  Apr-12 20:24:48: Build 7000.12.0913.1719
+[5234] DEBUG  Apr-12 20:24:49: No login cookie found at /home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/Tableau/tabcmd.txt
+[5234] DEBUG  Apr-12 20:24:49: run as: tabcmd 
+[5234] FATAL  Apr-12 20:24:49: undefined method `each' for "Show help for a specific command.":String
+[5234] DEBUG  Apr-12 20:24:49: /home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/multicommand.rb:52:in `summary'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/multicommand/help.rb:28:in `block in doc'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/multicommand/help.rb:26:in `each'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/multicommand/help.rb:26:in `inject'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/multicommand/help.rb:26:in `doc'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/multicommand.rb:364:in `help_for'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/multicommand/help.rb:53:in `run'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/multicommand.rb:162:in `dispatch'
+bin/tabcmd.rb:41:in `run'
+bin/tabcmd.rb:47:in `<main>'
+[5234] DEBUG  Apr-12 20:24:49: Finished at 2016-04-12 20:24:49 -0700
+[5264] DEBUG  Apr-12 20:25:36: 
+=====================================================================
+[5264] DEBUG  Apr-12 20:25:36: ====>> Starting Tabcmd 7.0 at 2016-04-12 20:25:36 -0700 <<====
+[5264] DEBUG  Apr-12 20:25:36: Build 7000.12.0913.1719
+[5264] DEBUG  Apr-12 20:25:36: No login cookie found at /home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/Tableau/tabcmd.txt
+[5264] DEBUG  Apr-12 20:25:36: run as: tabcmd login -U admin -s https://localhost
+[5264] INFO   Apr-12 20:25:36: Creating new session
+[5264] INFO   Apr-12 20:25:36:     Server:   https://localhost/
+[5264] INFO   Apr-12 20:25:36:     Username: admin
+[5264] FATAL  Apr-12 20:25:39: 
+[5264] DEBUG  Apr-12 20:25:39: /home/gdey/.gem/ruby/gems/highline-1.6.1/lib/highline.rb:630:in `getbyte'
+/home/gdey/.gem/ruby/gems/highline-1.6.1/lib/highline.rb:630:in `get_response'
+/home/gdey/.gem/ruby/gems/highline-1.6.1/lib/highline.rb:216:in `ask'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/server_info.rb:486:in `login'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/server_info.rb:503:in `login!'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/commands/login.rb:36:in `run'
+/home/gdey/Documents/tableau_for_centos/tabcmd_jar/tabcmd/lib/multicommand.rb:162:in `dispatch'
+bin/tabcmd.rb:41:in `run'
+bin/tabcmd.rb:47:in `<main>'
+[5264] DEBUG  Apr-12 20:25:39: Finished at 2016-04-12 20:25:39 -0700
