@@ -40,23 +40,28 @@ Install `vagrant` (Vagrant instalation using gem will be deprecated soon):
 ```
 gem install vagrant
 vagrant init centos/7; vagrant up --provider virtualbox
+
+# get vagrant id
+vagrant global-status
+
 ```
 
 #### Clone repo:
 
 ```
 sudo yum install git-core
-git clone https://github.com/gaurabde/tableau_for_centos
+git clone https://github.com/gaurabde/tabcmd_for_centos.git
 ```
 
 ### Code configuration
 -----------------------
 
 ```
-cd tabcmd_centos
+cd tabcmd_for_centos/tabcmd_jar
 uzip tabcmd.jar
+
 # install all required gems
-gem install `for i in ../../gems/*  ; do (echo \`basename $i\` | cut -f 1 -d '-') ; done `
+cd ../; gem install `for i in ../../gems/*  ; do (echo \`basename $i\` | cut -f 1 -d '-') ; done `
 ```
 
 #### Remove tabutil reference :mute: :error
@@ -126,9 +131,9 @@ end
 export APPDATA=~/Documents/tableau_for_centos/tabcmd_jar/tabcmd
 ```
 
-* change source in Gemfile
+* change Gemfile
 ```
-source 'https://rubygems.org'
+copy gem file from tableau_for_centos/tabcmd_jar/tabcmd
 ```
 
 * Execute bundle to install required gems
