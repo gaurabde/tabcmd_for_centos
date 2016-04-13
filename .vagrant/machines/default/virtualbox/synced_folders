@@ -1,1 +1,0 @@
-{"rsync":{"/home/vagrant/sync":{"type":"rsync","guestpath":"/home/vagrant/sync","hostpath":"/home/gdey/Documents/tableau_for_centos","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
