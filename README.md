@@ -127,8 +127,9 @@ export APPDATA=~/Documents/tableau_for_centos/tabcmd_jar/tabcmd
 ```
 
 * change source in Gemfile
-
-**source 'https://rubygems.org'**
+```
+source 'https://rubygems.org'
+```
 
 * Execute bundle to install required gems
 
