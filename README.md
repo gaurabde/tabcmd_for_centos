@@ -146,9 +146,10 @@ bundle update
 
 * Install gems for safty, if is not installed duing bundle:  :see_no_evil:
 ```
-gem install log4r
-gem install rchardet
-gem install iconv
+gem install log4r --no-document
+gem install rchardet --no-document
+gem install iconv --no-document
+gem install rails --no-document
 ```
 
 ### Run tabcmd:
