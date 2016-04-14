@@ -1,10 +1,10 @@
-# tabcmd_for_centos
+# tabcmd_for_centos (version 7)
 
-## For CentOS environment:
+## For CentOS environment(vagrant box):
 ---------------------------
 ---------------------------
 
-### Install virtualbox:
+### 1.1 Install virtualbox:
 -----------------------
 ```sudo vim /etc/yum.repos.d/virtualbox.repo```
 
@@ -33,7 +33,7 @@ sudo yum install kernel-headers kernel-devel fontforge binutils glibc-headers gl
 
 (Vagrant instalation using gem will be deprecated soon)
 
-### Get Centos/7 vagrant file and run:
+### 1.2 Get Centos/7 vagrant file and run:
 -----------------------------------
 Install `vagrant` (Vagrant instalation using gem will be deprecated soon):
 
@@ -46,25 +46,36 @@ vagrant global-status
 
 ```
 
-#### Clone repo:
+#### 1.3 Clone repo:
 
 ```
 sudo yum install git-core
 git clone https://github.com/gaurabde/tabcmd_for_centos.git
 ```
 
-### Code configuration
------------------------
+##### To run existing tabcmd version 7 (from following repo)
+
+* [Install ruby version >= 2.0.0](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-centos-6-with-rvm)
 
 ```
-cd tabcmd_for_centos/tabcmd_jar
+cd tabcmd_for_centos
+gem install `for i in ../../gems/*  ; do (echo \`basename $i\` | cut -f 1 -d '-') ; done `
+```
+* jump to *step 3*
+
+
+### 2. Custome configuration
+-----------------------
+
+**NOTE**: If you are using your own `tabcmd.jar`
+```
 uzip tabcmd.jar
 
 # install all required gems
-cd ../; gem install `for i in ../../gems/*  ; do (echo \`basename $i\` | cut -f 1 -d '-') ; done `
+gem install `for i in ../../gems/*  ; do (echo \`basename $i\` | cut -f 1 -d '-') ; done `
 ```
 
-#### Remove tabutil reference :mute: :error
+#### 2.1 Remove tabutil reference :mute: to aviod runtime errors
 * Move/Remove `tabutil.rb` file:
 ```
 mv common/ruby/lib/tabutil.rb common/ruby/lib/tabutil.rb_old
@@ -99,7 +110,7 @@ class DumpReporter
 end
 ```
 
-* update code to change **working directory** `relative_path.rb` 
+#### 2.2 Update code to change **working directory** (`relative_path.rb`)
 
 ```
 vim ./common/ruby/lib/relative_path.rb
@@ -126,7 +137,7 @@ module RelativePath
 end
 ```
 
-#### Create environemnt variable
+#### 2.3 Create environemnt variable
 ```
 export APPDATA=~/Documents/tableau_for_centos/tabcmd_jar/tabcmd
 ```
@@ -152,7 +163,7 @@ gem install iconv --no-document
 gem install rails --no-document
 ```
 
-### Run tabcmd:
+### 3. Run tabcmd:
 ```
 bin/tabcmd.rb login -U <user_name> -s <server_url>
 ```
