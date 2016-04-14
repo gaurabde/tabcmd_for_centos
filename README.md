@@ -179,3 +179,6 @@ bin/tabcmd.rb login -U <user_name> -s <server_url>
 uninitialized constant ActiveSupport::Autoload (NameError)
 ```
  **solution**: add ``` require 'active_support'``` to bin/tabcmd.rb
+
+
+Tags: Tableau, tabcmd, CentOS, Linux, tabcmd version 7, Tableau Server command line tool
